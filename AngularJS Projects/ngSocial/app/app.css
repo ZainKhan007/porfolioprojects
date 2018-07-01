@@ -1,0 +1,57 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.stbody{
+  min-height:70px;
+}
+.stbody{
+  min-height:70px;
+  margin-bottom: 10px;
+  border-bottom: dashed 1px #cc0000;
+}
+
+.stimg{
+  float: left;
+  height: 50px;
+  width: 50px;
+  border: solid 1px $dedede;
+  padding: 5px;
+}
+.sttext{
+  margin-left: 70px;
+  min-height: 50px;
+  word-wrap: break-word;
+  overflow: hidden;
+  padding: 5px;
+  display: block;
+  font-family: 'Georgia', Times New Roman,Times,serif;
+}
+.sttime{
+  font-size: 11px;
+  color: #999;
+  font-family: Arial,Helvetica,sans-serif;
+  margin-top: 5px;
+}
