@@ -1,0 +1,50 @@
+<div ng-controller="PostCtrl" class="ng-scope">
+  <nav class="navbar navbar-light navbar-expand-lg bg-light justify-content-between">
+		  <a class="navbar-brand text-secondary">Content Management System</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+			aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav ml-auto">
+					<li id="logout">
+						<input type="button" class="btn btn-outline-primary" ng-click="LogOut();" value="Logout">
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div id="wrapper" class="container">
+			<div class="row">
+			<div class="col-md-7 offset-md-5">
+				<h1 id="header" class="ng-binding">{{header}}</h1>
+			</div>
+			</div>
+			<form id="post" ng-submit="Post()" enctype="multipart/form-data">
+			  <div class="form-group row">
+				<label for="eventname" class="col-lg-2 col-form-label">Event Title</label>
+				<div class="col-lg-9">
+				  <input type="text" style="padding:10px;font-size:1.25em;" class="form-control"
+				  ng-model="eventname" name="title" placeholder="Sports Week">
+				</div>
+			  </div>
+			  <div class="form-group row">
+				<label for="description" class="col-lg-2 col-form-label">Description</label>
+				<div class="col-lg-9">
+				  <textarea class="form-control" name="description" style="font-size:1.1em;" rows="8"
+				  ng-model="description" placeholder="Description about event"></textarea>
+				</div>
+			  </div>
+			  <div class="form-group row">
+				<label for="imgUpload" class="col-lg-2 col-form-label">Upload Image</label>
+				<div class="col-lg-9">
+				  <input type="file" accept="image/*" name="imgupd">
+				  <input type="submit" class="btn btn-secondary float-right"
+					id="inputPassword" value="POST">
+				</div>
+			  </div>
+			</form>
+      <a href="/#!/cms" class="btn btn-default btn-lg float-right">
+        View Site <i class="fa fa-external-link"></i>
+      </a>
+		</div>
+</div>

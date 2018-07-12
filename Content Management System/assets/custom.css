@@ -1,0 +1,98 @@
+/*login form code*/
+body{
+  background: #BA9EEA; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+}
+
+.col-md-4:first-child{
+ background-color:#ecf0f1;
+ color: #2c3e50;
+}
+ .col-md-4:nth-child(2n){
+  background-color:#d35400;
+  color: white;
+}
+.col-md-4:nth-child(3n){
+ background-color:#9b59b6;
+ color: white;
+}
+.posts{
+  margin-top:50px;
+  text-align: center;
+  color: black;
+}
+.posts img{
+  width:100%;
+  margin-top: 10px;
+}
+#header{ color: white; }
+#login, #post{
+  background-color: rgba(0,0,0,0.3);
+  margin: 20% auto;
+  padding: 50px;
+  color: white;
+}
+#wrapper{
+	margin-top:5%;
+}
+#post{
+	margin: 4% auto;
+}
+#login legend{
+  position: relative;
+}
+#login label,#post label{
+  font-size: 18px;
+}
+#login input{
+  background-color: rgba(0,0,0,0.2);
+  padding: 15px;
+  font-size: 17px;
+  color: white;
+}
+#login input::placeholder{
+  opacity: 0.8;
+  color: white;
+}
+#login input[type="submit"]{
+	margin-top:20px;
+}
+.btn{
+  border-color: rgba(255,255,255,0.5);
+  background-color: rgba(0,0,0,0) !important;
+  transition: all 1s;
+  color: #fff;
+}
+.btn:hover{
+  background-color: rgba(0,0,0,0.7) !important;
+  opacity: 0.8;
+  color: white;
+}
+#logout .btn{color: rgba(0,0,0,0.5) !important;}
+#logout .btn:hover{
+  color: rgb(255,255,255) !important;
+  background-color: #007bff !important;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 575.98px) {
+#header{ text-align: center; font-size:1.75em;}
+#post label{font-size:1em;}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+#header{ text-align: center; font-size:2.25em;}
+#post label{font-size:1.25em;}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+#header{ text-align: center; font-size:2.5em;}
+#post label{font-size:1.25em;}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+#post label{font-size:1em;}
+}

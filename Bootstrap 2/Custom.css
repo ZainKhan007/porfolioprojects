@@ -1,0 +1,174 @@
+body{
+  font-weight: 300;
+  font-family: "source sans pro", sans-serif;
+}
+.container-fluid{
+  max-width: 1200px;
+}
+
+#serviceLogo{
+  width:100px;
+  height: 100px;
+}
+
+.btn-lg{
+  padding: 16px 32px;
+}
+
+.btn-primary{
+  background-color:#34495e;
+  border-color:#2c3e50;
+}
+
+.btn-primary:hover{
+  background-color: #2c3e50;
+  border-color:#34495e;
+}
+.form-control{
+  height: 50px;
+  padding: 12px 24px;
+}
+
+.lead{
+  font-size: 1.8em;
+}
+.info{
+  font-family: "roboto slab",serif;
+  font-size: 1.2em;
+  padding: 0 0 25px 0;
+  font-weight: 100;
+}
+
+.navbar{
+  margin-bottom: 0;
+}
+
+ul li a{
+  font-size: 20px;
+  margin-top:8px;
+}
+.navbar-default{
+  background-color: #34495e;
+  border-color: transparent;
+  border-radius: 0px;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a{
+  color: #ffffff;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #7f8c8d;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus{
+  background-color: #ffffff;
+  border-color: #34495e;
+  color: #2c3e50;
+}
+
+.navbar-default .navbar-toggle{
+  background-color: #34495e;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open:hover,
+.navbar-default .navbar-nav>.open:focus{
+  color: #2c3e50;
+  background-color: #ffffff;
+}
+
+.navbar-default .navbar-brand{
+  padding: 25px;
+  height: auto !important;
+}
+
+.navbar-toggle{
+  padding: 12px;
+  margin-top:12.5px;
+  margin-bottom:12.5px;
+  border-radius: 0px;
+}
+
+.jumbotron{
+  margin-bottom: 0px;
+  padding-top: 95px;
+  padding-bottom: 95px;
+  color: #fefefe;
+}
+.jumbotron h1{
+  margin-bottom: 40px;
+}
+
+#services{
+  background-color: #34495e;
+}
+
+#team{
+  background-color: #16a085;
+}
+
+#contact{
+  background-color: #c0392b;
+}
+
+#services, #contact, #team{
+  text-align: center;
+  padding: 48px;
+  color: #fefefe;
+}
+
+#services  .page-header small, #contact  .page-header small, #team .page-header small{
+  color:#fefefe;
+}
+
+#services img, #team img{
+  border-radius: 50%;
+  border: 8px solid #dddddd;
+  margin: 5px;
+
+}
+
+#services img:hover, #team img:hover{
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+#jumbo1, #jumbo2, #jumbo3{
+  background: url("http://previews.123rf.com/images/andesign101/andesign1011207/andesign101120700044/14642804-erbe-autoctone-e-piante-infestanti-come-immagine-di-sfondo-da-bondall-zone-umide-brisbane-Archivio-Fotografico.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+footer{
+  font-size: 1.3em;
+  text-align: center;
+  padding: 18px;
+  color: #ffffff;
+  background-color: #34495e;
+}
+
+footer a{
+  color: #ffffff;
+}
+
+footer a:hover{
+  color: #fefefe;
+}
+
+@media (min-width:768px;){
+  .navbar-nav>li>a{
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .jumbotron{
+    padding-top: 225px;
+    padding-bottom: 225px;
+  }
+}

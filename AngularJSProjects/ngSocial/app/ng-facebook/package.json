@@ -1,0 +1,60 @@
+{
+  "_from": "ng-facebook",
+  "_id": "ng-facebook@0.1.6",
+  "_inBundle": false,
+  "_integrity": "sha1-Jr6FVH0kwky9GzkAQnzM28PQho8=",
+  "_location": "/ng-facebook",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "ng-facebook",
+    "name": "ng-facebook",
+    "escapedName": "ng-facebook",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ng-facebook/-/ng-facebook-0.1.6.tgz",
+  "_shasum": "26be85547d24c24cbd1b3900427cccdbc3d0868f",
+  "_spec": "ng-facebook",
+  "_where": "C:\\xampp\\htdocs\\ngSocial",
+  "author": {
+    "name": "@AlmogBaku",
+    "url": "by GoDisco"
+  },
+  "bugs": {
+    "url": "https://github.com/GoDisco/ngFacebook/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Angular service to handle facebook api",
+  "devDependencies": {
+    "chai": "~1.10.0",
+    "chai-as-promised": "~4.1.1",
+    "express": "~4.10.6"
+  },
+  "homepage": "https://github.com/GoDisco/ngFacebook",
+  "keywords": [
+    "facebook",
+    "angularjs",
+    "service",
+    "ng-facebook",
+    "ngFacebook"
+  ],
+  "license": "MIT License",
+  "main": "ngFacebook.js",
+  "name": "ng-facebook",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoDisco/ngFacebook.git"
+  },
+  "scripts": {
+    "test": "protractor"
+  },
+  "version": "0.1.6"
+}

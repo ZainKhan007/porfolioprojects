@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Pakistan",
+    "street-address": "North Nazimabad",
+    "city":"karachi",
+    "state":"PK",
+    "zip":"40895",
+    "phone":"123-34566-32"
+  },
+  {
+    "id": 2,
+    "name": "Pakistan",
+    "street-address": "North Nazimabad",
+    "city":"karachi",
+    "state":"PK",
+    "zip":"40895",
+    "phone":"123-34566-32"
+  },
+  {
+    "id": 3,
+    "name": "Pakistan",
+    "street-address": "North Nazimabad",
+    "city":"karachi",
+    "state":"PK",
+    "zip":"40895",
+    "phone":"123-34566-32"
+  }
+]

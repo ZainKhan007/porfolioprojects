@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Admin Area Pages</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+    <script src="https://cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Adminstrap</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">Admin <small>Account Login</small></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container">
+            <div class="row">
+               <div class="col-md-4 col-md-offset-4">
+                  <form id="login" class="well">
+                      <div class="from-group">
+                          <label>Email Address</label>
+                          <input type="email" class="form-control">
+                      </div>
+                      <div class="from-group">
+                          <label>Password</label>
+                          <input type="password" class="form-control">
+                      </div>
+                      <br>
+                      <a href="index.html" type="submit" class="btn btn-default btn-block">Login</a>
+                  </form>
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>Copyrights &copy Adminstrap</p>
+    </footer>
+
+    <div class="modal fade" id="addpage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <form class="" action="index.html" method="post">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Add Pages</h4>
+                  </div>
+                  <div class="modal-body">
+                      <div class="form-group">
+                          <label for="">Page Title</label>
+                          <input type="text" placeholder="Page title" class="form-control">
+                      </div>
+                      <div class="form-group">
+                          <label for="">Page Body</label>
+                          <textarea name="editor1" class="form-control" placeholder="Page body"></textarea>
+                      </div>
+
+                      <label>
+                        <input type="checkbox"> Published
+                      </label>
+                      <div class="form-group">
+                          <label for="">Meta Tags</label>
+                          <input type="text" placeholder="Meta tags" class="form-control">
+                      </div>
+                      <div class="form-group">
+                          <label for="">Meta Description</label>
+                          <input type="text" placeholder="Meta description" class="form-control">
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-primary">Save changes</button>
+                  </div>
+              </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+            CKEDITOR.replace( 'editor1' );
+    </script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

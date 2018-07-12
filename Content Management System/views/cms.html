@@ -1,0 +1,16 @@
+<div ng-controller="CmsCtrl">
+  <div class="container">
+    <div class="row">
+      <h1 class="col-md-12"
+      style="margin-top:20px;text-align:center;">Library Department</h1>
+      <div ng-repeat="poster in post" class="col-md-4 card posts" >
+        <img class="card-img-top" src="{{poster.imageUrl}}" height="200" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{poster.event}}</h5>
+          <p class="card-text">{{poster.description}}</p>
+          <a href="" class="btn-link">Read More...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

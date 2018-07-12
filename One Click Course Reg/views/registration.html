@@ -1,0 +1,46 @@
+<div class="container" ng-controller="RegCtrl">
+  <div class="row">
+    <div class="col-md-12">
+      <button class="btn float-md-right btn-primary" ng-click="Logout();" type="button"> <a href="#">Log Out</a> </button>
+    </div>
+      <div class="col-md-10">
+        <h2 style="margin-top:10px;">Your Profile</h2>
+      </div>
+  </div>
+  <div class="row">
+    <div class="container">
+      <ul class="row">
+          <li class="col-6">Name: {{student["std_name"]}}</li>
+          <li class="col-6">Class: {{student.std_program}} ({{semester["std_semester"]}})</li>
+          <li class="col-md-6 col-12">Registration: {{student.std_reg}}</li>
+          <li class="col-md-6 col-12">Enrollment: {{student.std_enrollment}}</li>
+      </ul>
+    </div>
+  </div>
+  <h2 style="margin-top:10px;">Your Registered Courses</h2>
+  <div class="row">
+      <div class="col-12 table-responsive">
+        <table class="table table-hover">
+          <caption>List of Registered Courses</caption>
+          <thead>
+            <tr>
+              <th scope="col">Course Code</th>
+              <th scope="col">Status</th>
+              <th scope="col">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="reg in regD">
+              <td scope="row">{{reg.couse_code}}</td>
+              <td>{{semester["status"]}}</td>
+              <td>{{semester["reg_date"]}}</td>
+            </tr>
+          </tbody>
+          </table>
+      </div>
+  </div>
+  <div class="float-lg-right">
+    <button type="button" class="btn btn-primary btn-block">Online Payment <span class="fa fa-credit-card"></span></button>
+    <button type="button" class="btn btn-secondary btn-block">Generate Challan <span class="fa fa-download"></span></button>
+  </div>
+</div>

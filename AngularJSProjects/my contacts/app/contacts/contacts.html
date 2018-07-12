@@ -1,0 +1,193 @@
+<div class="row" ng-controller="ContactsCtrl">
+<div class="col-md-10">
+  <div class="alert alert-success" ng-show="msg"> {{msg}} </div>
+
+  <div class="row" ng-show="contactShow">
+      <div class="panel panel-primary">
+          <div class="panel-heading">
+            {{name}}
+          </div>
+          <div class="panel-body">
+            <ul>
+                <li>  <strong>Company</strong>: {{company}} </li>
+                <li>  <strong>Email Address</strong>: {{email}}  </li>
+                <h5>Phone Numbers</h5>
+                <li>  <strong>Work</strong>: {{wPhone}}  </li>
+                <li>  <strong>Mobile</strong>: {{mPhone}}  </li>
+                <li>  <strong>Home</strong>: {{hPhone}}  </li>
+                <h5>Location Info</h5>
+                <li>  {{sAddress}} </li>
+                <li>  {{city}}, {{state}}, {{zipCode}} </li>
+            </ul>
+          </div>
+      </div>
+  </div>
+
+  <form ng-show="addFormShow" ng-submit="addFormSubmit();">
+
+      <h5>Add Contact</h5>
+
+      <div class="row">
+          <div class="col-md-6">
+              <label class="control-label" for="">Name:
+                  <input class="form-control" type="text" ng-model="name" placeholder="Contact Name" required>
+              </label>
+          </div>
+          <div class="col-md-6">
+              <label class="control-label" for="">Email:
+                  <input class="form-control" type="text" ng-model="email" placeholder="Contact Email" required>
+              </label>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <label class="control-label" for="">Company:
+                  <input class="form-control" type="text" ng-model="company" placeholder="Company Name">
+              </label>
+          </div>
+          <div class="col-md-6">
+              <label class="control-label" for="">Work Phone:
+                  <input class="form-control" type="text" ng-model="wPhone" placeholder="Work Phone">
+              </label>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <label class="control-label" for="">Mobile Phone:
+                  <input class="form-control" type="text" ng-model="mPhone" placeholder="Mobile">
+              </label>
+          </div>
+          <div class="col-md-6">
+              <label class="control-label" for="">Home Phone:
+                  <input class="form-control" type="text" ng-model="hPhone" placeholder="Home">
+              </label>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <label class="control-label" for="">Street Address:
+                  <input class="form-control" type="text" ng-model="sAddress" placeholder="Street Adress">
+              </label>
+          </div>
+          <div class="col-md-6">
+              <label class="control-label" for="">City:
+                  <input class="form-control" type="text" ng-model="city" placeholder="City">
+              </label>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <label class="control-label" for="">State:
+                  <input class="form-control" type="text" ng-model="state" placeholder="State">
+              </label>
+          </div>
+          <div class="col-md-6">
+              <label class="control-label" for="">Zip Code:
+                  <input class="form-control" type="text" ng-model="zipCode" placeholder="Zip Code">
+              </label>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+                  <input type="submit" value="Add Contact" class="btn btn-primary">
+          </div>
+      </div>
+  </form>
+  <form ng-show="editFormShow" ng-submit="editFormSubmit();">
+
+      <h5>Edit Contact</h5>
+
+      <div class="row">
+          <div class="col-md-6">
+              <label class="control-label" for="">Name:
+                  <input class="form-control" type="text" ng-model="name" placeholder="Contact Name" required>
+              </label>
+          </div>
+          <div class="col-md-6">
+              <label class="control-label" for="">Email:
+                  <input class="form-control" type="text" ng-model="email" placeholder="Contact Email" required>
+              </label>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <label class="control-label" for="">Company:
+                  <input class="form-control" type="text" ng-model="company" placeholder="Company Name">
+              </label>
+          </div>
+          <div class="col-md-6">
+              <label class="control-label" for="">Work Phone:
+                  <input class="form-control" type="text" ng-model="wPhone" placeholder="Work Phone">
+              </label>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <label class="control-label" for="">Mobile Phone:
+                  <input class="form-control" type="text" ng-model="mPhone" placeholder="Mobile">
+              </label>
+          </div>
+          <div class="col-md-6">
+              <label class="control-label" for="">Home Phone:
+                  <input class="form-control" type="text" ng-model="hPhone" placeholder="Home">
+              </label>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <label class="control-label" for="">Street Address:
+                  <input class="form-control" type="text" ng-model="sAddress" placeholder="Street Adress">
+              </label>
+          </div>
+          <div class="col-md-6">
+              <label class="control-label" for="">City:
+                  <input class="form-control" type="text" ng-model="city" placeholder="City">
+              </label>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <label class="control-label" for="">State:
+                  <input class="form-control" type="text" ng-model="state" placeholder="State">
+              </label>
+          </div>
+          <div class="col-md-6">
+              <label class="control-label" for="">Zip Code:
+                  <input class="form-control" type="text" ng-model="zipCode" placeholder="Zip Code">
+              </label>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+                  <input type="submit" value="Update Contact" class="btn btn-primary">
+          </div>
+      </div>
+  </form>
+    <h5>Your Contacts ( {{contacts.length}} )</h5>
+    <table>
+      <thead>
+          <tr>
+              <th width="200px">Name</th>
+              <th width="200px">Company</th>
+              <th width="25%">Email</th>
+              <th width="25%">Actions</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr ng-repeat="contact in contacts">
+              <td> <a ng-click="showContact(contact)">{{contact.name}}</a> </td>
+              <td> <a>{{contact.company}}</a> </td>
+              <td> <a>{{contact.email}}</a> </td>
+              <td> <a class="btn btn-sm btn-success" ng-click="showEditForm(contact)">Edit</a>
+                   <a class="btn btn-sm btn-danger" ng-click="removeContact(contact)">Delete</a>
+               </td>
+          </tr>
+      </tbody>
+    </table>
+</div>
+<div class="col-sm-12 col-md-2">
+  <a class="btn btn-lg btn-primary" ng-click="showAddForm()" ng-hide="addFormShow">+</a>
+  <a class="btn btn-lg btn-primary" ng-click="hide()" ng-show="addFormShow">-</a>
+  <a class="btn btn-lg btn-primary" ng-click="hide()" ng-show="contactShow">-</a>
+</div>
+</div>

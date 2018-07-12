@@ -1,0 +1,230 @@
+/*login form code*/
+body{
+  background: #41295a;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: auto;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+ *::-webkit-scrollbar:horizontal{
+	 height: 12px;
+ }
+*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+
+}
+*::-webkit-scrollbar-track-piece  {
+	background-color:#7a6591;
+	border-radius:10px;
+
+}
+*::-webkit-scrollbar-thumb {
+    background-color:#7a6591;
+	border-radius:50px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+#header{
+  color:orange;
+  position: absolute;
+  top: -15%;
+  left: 25%;
+}
+#login{
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 25% auto;
+  padding: 40px;
+  color: white;
+  border-radius: 5px;
+}
+#login legend{
+  position: relative;
+}
+#login label{
+  font-size: 20px;
+  margin-top: 10px;
+}
+#login input[type="text"],
+#login input[type="password"]{
+  background-color: rgba(0,0,0,0) !important;
+  padding: 13px;
+  font-size: 17px;
+  color: white;
+}
+.msg{
+  color:red;
+  font-size:14px;
+  position: absolute;
+}
+.col-md-12 button{
+  margin-top: 10px;
+}
+.col-md-12 a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+
+}
+#login input[type="submit"]{
+  padding: 15px;
+  font-size: 17px;
+  color: white;
+  margin-top: 30px;
+}
+#login input::placeholder{
+  opacity: 0.8;
+  color: white;
+}
+.form-group{
+  margin-top: 10px;
+}
+.btn{
+  border-color: rgba(255,255,255,0.5);
+  background-color: rgba(0,0,0,0) !important;
+  transition: all 1s;
+}
+.btn:hover{
+  background-color: rgba(0,0,0,0.3) !important;
+  opacity: 0.8;
+}
+
+h1,h2{
+  color: orange;
+}
+caption{
+  color: white;
+}
+ul{
+   list-style-type:none;
+   margin: 0;
+   padding: 0;
+   margin-left: 20px;
+   font-size: 20px;
+   font-weight:400;
+}
+ul li{
+  margin-top: 5px;
+}
+.table tr td:hover{
+  cursor: pointer;
+}
+button[type="button"]:nth-child(2){
+  margin-bottom: 31px;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #header{
+    position: absolute;
+    top: -10%;
+    left: 16%;
+  }
+  #login{
+    padding: 20px 30px;
+  }
+  #login legend{
+    font-size: 1.5em;
+  }
+  #login label,
+  #login input[type="text"],
+  #login input[type="password"],
+  .col-md-12 a{
+    font-size: 1.15em;
+  }
+  #login input::placeholder{
+    font-size: 0.9em;
+  }
+  #login input[type="button"]{
+    padding: 15px;
+    font-size: 1.25em;
+    color: white;
+    margin-bottom: 10px;
+  }
+  h2{
+    font-size: 1.5em;
+    text-align: center;
+  }
+  ul{
+    margin: auto 18%;
+    font-size: 0.9em;
+  }
+  caption{
+    text-align: center;
+  }
+
+  .col-md-12 button{
+    margin-left: 35%;
+  }
+  *::-webkit-scrollbar:horizontal{
+	 height: 6px;
+ }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .col-md-12 button{
+    margin-left: 40%;
+  }
+  #header{
+    position: absolute;
+    top: -10%;
+    left: 25%;
+  }
+  caption{
+    text-align: center;
+  }
+  ul{
+    margin: auto 22%;
+    font-size: 1em;
+  }
+  ul li{
+    font-weight:300;
+  }
+  h2{
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .col-md-12 button{
+    margin-left: 40%;
+  }
+  #header{
+    top: -10%;
+    left: 25%;
+  }
+  h1{
+    font-size: 30px;
+    text-align: center;
+  }
+  ul{
+    margin: auto 22%;
+    font-size: 1em;
+  }
+  ul li{
+    font-weight:500;
+  }
+  h2{
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops) */
+/* No media query since the extra-large breakpoint has no upper bound on its width*/
