@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Mean App</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  </head>
+  <body ng-app="App">
+    <div class="container" ng-controller="AppCtrl">
+      <h1>Contact Mean Application</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Action</th>
+            <th>&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> <input type="text" class="form-control" ng-model="contact.name" required> </td>
+            <td> <input type="email" class="form-control" ng-model="contact.email" required> </td>
+            <td> <input type="phone" class="form-control" ng-model="contact.phone" required> </td>
+            <td> <input type="button" class="btn btn-primary" value="Add Contact" ng-click="addContact()"> </td>
+            <td>
+              <input type="button" class="btn btn-warning" value="Update Contact" ng-click="update()">
+              <input type="button" class="btn btn-success" ng-click="clear()" value="Clear">
+            </td>
+          </tr>
+          <tr ng-repeat="contact in contactlist">
+            <td>{{contact.name}}</td>
+            <td>{{contact.email}}</td>
+            <td>{{contact.phone}}</td>
+            <td>
+              <input type="button" class="btn btn-danger" ng-click="remove(contact._id)" value="Remove">
+            </td>
+            <td>
+              <input type="button" class="btn btn-info" ng-click="edit(contact._id)" value="Edit">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+    <script type="text/javascript" src="controllers/controller.js"></script>
+  </body>
+</html>

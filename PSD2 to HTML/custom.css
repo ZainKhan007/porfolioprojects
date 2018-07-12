@@ -1,0 +1,119 @@
+.act{
+  color: #650974 !important;
+}
+.banner{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.banner img{
+  width: 100%;
+  height: auto;
+}
+.breadcrumb{
+  background: none !important;
+}
+
+.media ul li:before{
+  height: 10px;
+  background: pink;
+  padding: 2px;
+}
+
+.box{
+  box-shadow: 0 0 7px #000;
+  margin-bottom: 20px;
+}
+.list-group-item{
+  padding: .75rem 0 !important;
+}
+.list-group-item:first-child{
+  border:none;
+}
+.section{
+  padding: 20px;
+}
+.section h6{
+  font-weight: bold;
+}
+.section:first-child{
+  margin-top: 0;
+}
+.footer{
+  background: #1C0347;
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.footer img{
+  width: 250px;
+}
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: 10px;
+}
+@media (min-width:480px) and (max-width:992px) {
+  body{
+    text-align: center;
+    font-size: 1.1em;
+  }
+  .breadcrumb, .media ul li, p, .list-unstyled p{
+    text-indent: 5%;
+  }
+  .box{
+    margin-top: 20px;
+      font-size: 0.9em;
+  }
+  .breadcrumb{
+    font-size: 0.9em;
+  }
+  .list-unstyled{
+    margin-top: 80px !important;
+    font-size: 1.1em;
+  }
+  .horbar{
+    height: 2px;
+  }
+  .breadcrumb li:first-child{
+    margin-left: auto !important;
+  }
+  .breadcrumb li:first-child{
+    margin-right: 0 !important;
+  }
+  .breadcrumb li:last-child{
+    margin-right: auto !important;
+  }
+  .breadcrumb li:last-child{
+    margin-left: 0 !important;
+  }
+  .breadcrumb{
+    font-size: 0.9em;
+  }
+  .section{
+    margin-top: 20px;
+  }
+}
+@media (min-width:300px) and (max-width:479.9px){
+  body{
+    text-align: center;
+      font-size: 0.9em;
+      line-height: 2;
+  }
+  .breadcrumb{
+    font-size: 0.9em;
+  }
+  .breadcrumb li:first-child{
+    margin-left: auto !important;
+  }
+  .breadcrumb li:first-child{
+    margin-right: 0 !important;
+  }
+  .breadcrumb li:last-child{
+    margin-right: auto !important;
+  }
+  .breadcrumb li:last-child{
+    margin-left: 0 !important;
+  }
+  .section{
+    margin-top: 15px;
+  }
+}

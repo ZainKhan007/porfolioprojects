@@ -1,0 +1,21 @@
+{
+  "name": "contactmeanapp",
+  "version": "1.0.0",
+  "description": "this is my mean stack CRUP application",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongojs": "^2.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "contactlistapp"
+  ],
+  "author": "zainkhan",
+  "license": "ISC"
+}
