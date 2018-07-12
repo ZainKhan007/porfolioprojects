@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title></title>
+		<meta name="description" content="">
+
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+	</head>
+	<body>
+
+	<div class="container" id="main">
+
+			<div class="navbar navbar-fixed-top">
+
+					<div class="container">
+
+						<button type="button" class="navbar-toggle" data-target=".navbar-responsive-collapse"
+							data-toggle="collapse">
+
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+
+						</button>
+
+							<a class="navbar-brand" href="/"> <img src="images/logo.png" alt="Your Logo" /> </a>
+
+							<div class="nav-collapse collapse navbar-responsive-collapse">
+									<ul class="navbar-nav nav">
+
+											<li class="active">
+												<a href="#">Home</a>
+											</li>
+
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <span class="caret"></span></a>
+
+													<ul class="dropdown-menu">
+
+														<li>
+															<a href="#">Web Design</a>
+														</li>
+
+														<li>
+															<a href="#">Web Development</a>
+														</li>
+
+														<li>
+															<a href="#">SEO</a>
+														</li>
+
+														<li class="divider"></li>
+
+														<li class="dropdown-header">More Services</li>
+
+														<li>
+															<a href="#">Content Creation</a>
+														</li>
+
+														<li>
+															<a href="#">Social Media Marketing</a>
+														</li>
+
+													</ul>
+											</li>
+
+									</ul> <!-- end nav-->
+
+									<form class="navbar-form pull-left" action="" method="">
+
+												<input type="text" class="form-control" id="inputSearch" name="" placeholder="Search Here....">
+												<button type="submit" class="btn btn-default" name="button"><span class="glyphicon glyphicon-search"></span></button>
+
+									</form><!-- end from-->
+
+									<ul class="nav navbar-nav pull-right">
+
+										<li  class="dropdown">
+
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<span class="glyphicon glyphicon-user"> My Account</span>
+													<span class="caret"></span>
+												</a>
+
+												<ul class="dropdown-menu">
+
+													<li>
+														<a href="#"><span class="glyphicon glyphicon-wrench"> </span> Settings</a>
+													</li>
+
+													<li>
+														<a href="#"><span class="glyphicon glyphicon-refresh"> </span> My Profile</a>
+													</li>
+
+													<li>
+														<a href="#"><span class="glyphicon glyphicon-briefcase"> </span> Billing</a>
+													</li>
+
+													<li class="divider"></li>
+
+													<li>
+														<a href="#"><span class="glyphicon glyphicon-off"> </span> Sign Out</a>
+													</li>
+
+												</ul>
+										</li>
+
+								</ul> <!-- end nav-->
+
+									</ul> <!-- end user UL-->
+
+							</div> <!-- end navbar-->
+
+					</div> <!-- end container-->
+			</div>	<!-- end navbar-->
+
+			<div class="carousel slide" id="mycarousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+						<li class="active" data-target="#mycaousel" data-slide-to="0"></li>
+						<li data-target="#mycaousel" data-slide-to="1"></li>
+						<li data-target="#mycaousel" data-slide-to="2"></li>
+				</ol>
+
+				<div class="carousel-inner">
+							<div class="item active" id="slide1">
+									<div class="carousel-caption">
+										<h4>Bootstrap 3</h4>
+										<p>Learn how to build your first responsive website with the brand new Twitter Bootstrap 3!</p>
+									</div> <!-- end carousel-caption-->
+							</div> <!-- end slide1-->
+
+							<div class="item" id="slide2">
+									<div class="carousel-caption">
+										<h4>Learn to code a website in 4-hours!</h4>
+										<p>PSD to HTML5 &amp; CSS3 is a popular Udemy course that has helped thousands of aspiring web designers launch their web design career.</p>
+									</div> <!-- end carousel-caption-->
+							</div> <!-- end slide1-->
+
+							<div class="item" id="slide3">
+									<div class="carousel-caption">
+										<h4>Web Hosting 101</h4>
+										<p>Learn how to buy a perfect domain name and hosting package, and get your website live on the web with ease.</p>
+									</div> <!-- end carousel-caption-->
+							</div> <!-- end slide1-->
+				</div> <!-- end inner-carousel-->
+
+				<a href="#mycarousel" class="left carousel-control" data-slide="prev"><span class="icon-prev"></span></a>
+				<a href="#mycarousel" class="right carousel-control" data-slide="next"><span class="icon-next"></span></a>
+			</div> <!-- end mycarousel-->
+
+			<div class="row" id="bigcallout">
+					<div class="col-12">
+
+							<div class="alert alert-success" id="successAlert">
+									<button type="button" class="close" data-dismiss="alert">&times;</button>
+									<h4>Success</h4>
+									<p>You just made this element display by JQuery. Click the 'x' in top right corner to close this callout</p>
+							</div>
+
+							<div class="well well-small visible-sm">
+									<a href="#" class="btn btn-large btn-default btn-block"><span class="glyphicon glyphicon-phone">Give Us A Call</span></a>
+							</div>
+
+							<div class="well">
+									<div class="page-header">
+											<h1>Fancy Header <small>A Subheader For Extra Awesome.</small></h1>
+									</div>
+									<p class="lead">Some solid leading copy will help get your users engaged. Use this area to come up with something real nice. Know what I'm sayin?</p>
+									<a href="#" class="btn btn-primary btn-large" id="alertme">Click a large nice big button</a>
+									<a href="#" class="btn btn-link btn-large">Or a secondary link</a
+							</div>
+					</div>
+			</div><!-- end bigcallout-->
+
+			<div class="row" id="featuresheading">
+					<div class="col-12">
+							<h2>More Features</h2>
+							<p class="lead">These are some more features of our website for you followers</p>
+					</div> <!-- col-12-->
+
+			</div><!-- end featureshaeding-->
+
+			<div class="row" id="features">
+				<div class="col-sm-4 feature">
+						<div class="panel">
+							<div class="panel-heading">
+								<div class="panel-title">
+										<h4>Mark up with HTML5</h4>
+								</div>
+							</div>
+								<img src="images/images/badge_html5.jpg" alt="HTML5" class="img-circle">
+								<p>HTML5 is basic language to build the structure of any website</p>
+								<a href="#" target="_blank" class="btn btn-warning btn-block">Learn to code in HTML5</a>
+						</div>
+				</div>
+				<div class="col-sm-4 feature">
+						<div class="panel">
+							<div class="panel-heading">
+								<div class="panel-title">
+										<h4>Style with CSS3</h4>
+								</div>
+							</div>
+								<img src="images/images/badge_css3.jpg" alt="CSS3" class="img-circle">
+								<p>CSS3 is used to style your website with some awesome looking</p>
+								<a href="#" target="_blank" class="btn btn-danger btn-block">Learn to code in CSS3</a>
+						</div>
+				</div>
+				<div class="col-sm-4 feature">
+						<div class="panel">
+							<div class="panel-heading">
+									<div class="panel-title">
+											<h4>Framework by bootstrap3</h4>
+									</div>
+							</div>
+								<img src="images/images/badge_bootstrap.jpg" alt="Bootstrap3" class="img-circle">
+								<p>Bootstrap is used to develop responsive websites</p>
+								<a href="#" target="_blank" class="btn btn-info btn-block">Learn to code in Bootstrap3</a>
+						</div>
+				</div>
+			</div><!-- end features-->
+
+			<div class="row" id="moreinfo">
+					<div class="col-sm-6">
+							<h3>Neat Tabbable Content</h3>
+							<div class="tabbable">
+									<ul class="nav nav-tabs">
+											<li class="active"><a href="#tab1" data-toggle="tab" >Section1</a></li>
+											<li ><a href="#tab2" data-toggle="tab" >Section2</a></li>
+									</ul>
+									<div class="tab-content">
+											<div class="tab-pane active" id="tab1">
+													<h4><span class="glyphicon glyphicon-map-marker"></span> Our location <small>more like our favourite surf spot</small></h4>
+													<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26081603.294420466!2d-95.677068!3d37.06250000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1499886653384" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+											<p>The HTML Certificate documents your knowledge of HTML.
+													The CSS Certificate documents your knowledge of advanced CSS.
+													The JavaScript Certificate documents your knowledge of JavaScript and HTML DOM.
+													The jQuery Certificate documents your knowledge of jQuery.
+													The PHP Certificate documents your knowledge of PHP and SQL (MySQL).
+													The XML Certificate documents your knowledge of XML, XML DOM and XSLT.
+													The Bootstrap Certificate documents your knowledge of the Bootstrap framework</p>
+											<p>The HTML Certificate documents your knowledge of HTML.
+													The CSS Certificate documents your knowledge of advanced CSS.
+													The JavaScript Certificate documents your knowledge of JavaScript and HTML DOM.
+													The jQuery Certificate documents your knowledge of jQuery.
+													The PHP Certificate documents your knowledge of PHP and SQL (MySQL).
+													The XML Certificate documents your knowledge of XML, XML DOM and XSLT.
+													The Bootstrap Certificate documents your knowledge of the Bootstrap framework</p>
+									</div>
+
+									<div class="tab-pane" id="tab2">
+											<h4>A left floated picture <small>Using placehold.it</small></h4>
+											<img src="http://placehold.it/140" alt="Placehold.it Image" class="thumbnail pull-left">
+											<p>The HTML Certificate documents your knowledge of HTML.
+													The CSS Certificate documents your knowledge of advanced CSS.
+													The JavaScript Certificate documents your knowledge of JavaScript and HTML DOM.
+													The jQuery Certificate documents your knowledge of jQuery.
+													The PHP Certificate documents your knowledge of PHP and SQL (MySQL).
+													The XML Certificate documents your knowledge of XML, XML DOM and XSLT.
+													The Bootstrap Certificate documents your knowledge of the Bootstrap framework</p>
+											<p>The HTML Certificate documents your knowledge of HTML.
+													The CSS Certificate documents your knowledge of advanced CSS.
+													The JavaScript Certificate documents your knowledge of JavaScript and HTML DOM.
+													The jQuery Certificate documents your knowledge of jQuery.
+													The PHP Certificate documents your knowledge of PHP and SQL (MySQL).
+													The XML Certificate documents your knowledge of XML, XML DOM and XSLT.
+													The Bootstrap Certificate documents your knowledge of the Bootstrap framework</p>
+													<hr>
+													<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal">
+													<span class="glyphicon glyphicon-hand-up"> </span>Click for a modal window</a>
+
+													<div class="modal fade" id="myModal">
+														<div class="modal-dialog">
+															<div class="modal-content">
+																	<div class="modal-header">
+																			<button type="button" class="close" data-dismiss="modal">&times;</button>
+																			<h4 class="modal-title">A modal window</h4>
+																	</div>
+																	<div class="modal-body">
+																			<h4>Text in a modal</h4>
+																			<p>
+																			The PHP Certificate documents your knowledge of PHP and SQL (MySQL).
+																			The XML Certificate documents your knowledge of XML, XML DOM and XSLT.
+																			The Bootstrap Certificate documents your knowledge of the Bootstrap framework
+																			</p>
+
+																			<h4>Modal window popover</h4>
+																			<a href="#" data-toggle="popover" data-content="popover" data-placement="top" data-original-title="you clicked it!" class="btn btn-danger pop">Don't click this button!</a>
+
+																			<h4>Modal window tooltip</h4>
+																			<a href="#" data-original-title="Tooltip" rel="tooltip">This link</a> should have a tooltip and so should<a href="#" data-original-title="WooHoo!" rel="tooltip"> this one </a>
+
+																			<hr>
+
+																			<p class="text-muted"><small>This form doesn't do anything just a heads up</small></p>
+
+																			<form class="form-horizontal">
+																					<div class="form-group">
+																							<label class="col-lg-2 control-label" for="inputName">Name</label>
+																							<div class="col-lg-10">
+																								<input type="text"  id="inputName" class="form-control" placeholder="Enter Name" name="" value="">
+																							</div>
+																					</div>
+																					<div class="form-group">
+																						<label class="col-lg-2 control-label" for="email">Email</label>
+																							<div class="col-lg-10">
+																								<input type="email" id="email" class="form-control" placeholder="Enter E-mail" name="" value="">
+																							</div>
+																					</div>
+																					<div class="form-group">
+																						<label class="col-lg-2 control-label" for="Message">Message</label>
+																							<div class="col-lg-10">
+																								<textarea id="Message" id="Message" class="form-control" placeholder="Type Message" rows="3"> </textarea>
+																								<button type="submit" class="btn btn-success pull-right">Save</button>
+																							</div>
+
+																					</div>
+																			</form>
+
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-default" data-dismiss="close" data-toggle="modal">Close</button>
+																		<button type="button" class="btn btn-primary" >Save Changes</button>
+																	</div>
+															</div>
+														</div>
+													</div>
+
+									</div>
+								</div>
+							</div>
+					</div>
+					<div class="col-sm-6">
+								<h3>Some text info</h3>
+								<p>The CSS Certificate documents your knowledge of advanced CSS.
+								The JavaScript Certificate documents your knowledge of JavaScript and HTML DOM.
+								The CSS Certificate documents your knowledge of advanced CSS.
+								The JavaScript Certificate documents your knowledge of JavaScript and HTML DOM.
+								</p>
+
+								<h4>A list group</h4>
+								<div class="list-group">
+										<a href="#" class="list-group-item">
+												<h4 class="list-group-item-heading">Kale</h4>
+												<p class="list-group-item-text">The JavaScript Certificate documents your knowledge of JavaScript and HTML DOM.</p>
+										</a>
+										<a href="#" class="list-group-item">
+												<h4 class="list-group-item-heading">Carrot</h4>
+												<p class="list-group-item-text">The JavaScript Certificate documents your knowledge of JavaScript and HTML DOM.</p>
+										</a>
+										<a href="#" class="list-group-item">
+												<h4 class="list-group-item-heading">Sparrow</h4>
+												<p class="list-group-item-text">The JavaScript Certificate documents your knowledge of JavaScript and HTML DOM.</p>
+										</a>
+
+										<h4>A small heading</h4>
+										<p>
+										The JavaScript Certificate documents your knowledge of JavaScript and HTML DOM.
+										The CSS Certificate documents your knowledge of advanced CSS.
+										The JavaScript Certificate documents your knowledge of JavaScript and HTML DOM.
+										</p>
+								</div>
+					</div>
+
+			</div><!-- end moreinfo-->
+			<hr>
+			<div class="row" id="morecourses">
+					<div class="col-12">
+						<h4>Learn more about web design</h4>
+							<div class="thumbnails row">
+									<div class="col-6">
+											<div class="thumbnail">
+														<img src="images/item_webhosting101.jpg" alt="webhosting101">
+														<div class="label label-success price">
+															<span class="glyphicon glyphicon-tag"> <sup>$</sup> 39 </span>
+														</div>
+														<div class="caption">
+																<h3>Web hosting 101</h3>
+																<p>
+																The JavaScript Certificate documents your knowledge of JavaScript and HTML DOM.
+																The CSS Certificate documents your knowledge of advanced CSS.
+																The JavaScript Certificate documents your knowledge of JavaScript and HTML DOM.
+																</p>
+
+																<p>
+																	<a href="#" class="btn btn-primary btn-small" target="_blank">Take course</a>
+																	<a href="#" class="btn btn-link btn-small" target="_blank">Learn more..</a>
+																</p>
+														</div>
+											</div>
+									</div>
+									<div class="col-6">
+											<div class="thumbnail">
+														<img src="images/item_psd2html5.jpg" alt="webhosting101">
+														<div class="label label-info price">
+															<span class="glyphicon glyphicon-tag"> free </span>
+														</div>
+														<div class="caption">
+																<h3>PSD2 to HTML5</h3>
+																<p>
+																The JavaScript Certificate documents your knowledge of JavaScript and HTML DOM.
+																The CSS Certificate documents your knowledge of advanced CSS.
+																The JavaScript Certificate documents your knowledge of JavaScript and HTML DOM.
+															</p>
+
+																<p>
+																	<a href="#" class="btn btn-primary btn-small" target="_blank">Take course</a>
+																	<a href="#" class="btn btn-link btn-small" target="_blank">Learn more..</a>
+																</p>
+														</div>
+											</div>
+									</div>
+							</div>
+					</div>
+			</div><!-- end morecourses-->
+
+	</div><!-- end container-->
+
+<div class="footer">
+	<footer>
+				<div class="container">
+						<div class="row">
+								<div class="col-sm-2">
+										<h6>Copyright &copy; Zain Khan</h6>
+								</div>
+								<div class="col-sm-4">
+										<h6>About Us</h6>
+										<p>The CSS Certificate documents your knowledge of advanced CSS.
+										The JavaScript Certificate documents your knowledge of JavaScript and HTML DOM.
+										</p>
+								</div>
+								<div class="col-sm-2">
+									<h6>Navigation</h6>
+										<ul class="unstyled">
+												<li><a href="#">Home</a></li>
+												<li><a href="#">Contact</a></li>
+												<li><a href="#">Services</a></li>
+												<li><a href="#">Links</a></li>
+										</ul>
+								</div>
+								<div class="col-sm-2">
+									<h6>Follow Us</h6>
+										<ul class="unstyled">
+												<li><a href="#">YouTube</a></li>
+												<li><a href="#">Favebook</a></li>
+												<li><a href="#">Twitter</a></li>
+												<li><a href="#">Google Plus</a></li>
+										</ul>
+								</div>
+								<div class="col-sm-2">
+										<h6>Code with <span class="glyphicon glyphicon-heart"> </span> by Zain Khan</h6>
+								</div>
+						</div>
+				</div>
+	</footer>
+	</div>
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+
+	</body>
+</html>

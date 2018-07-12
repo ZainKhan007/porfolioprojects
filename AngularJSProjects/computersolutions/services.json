@@ -1,0 +1,20 @@
+[
+  {
+    "id":1,
+    "name": "Hardware Repair",
+    "description": "some description about hardware",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsz42S_Mt_rw7MJMQtp_MK7ckGINmfJ_jKNGnhzF8x8uR4Z-jw"
+  },
+  {
+    "id":2,
+    "name": "Virus Removal",
+    "description": "some description about hardware",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsz42S_Mt_rw7MJMQtp_MK7ckGINmfJ_jKNGnhzF8x8uR4Z-jw"
+  },
+  {
+    "id":3,
+    "name": "System Tuneup",
+    "description": "some description about hardware",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsz42S_Mt_rw7MJMQtp_MK7ckGINmfJ_jKNGnhzF8x8uR4Z-jw"
+  }
+]

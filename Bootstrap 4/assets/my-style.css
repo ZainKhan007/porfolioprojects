@@ -1,0 +1,51 @@
+.card-glance li{
+  font-size: 23px;
+}
+
+.card-glance .col-md-4{
+  text-align: center;
+}
+
+.table-comments img{
+  max-width: 60px;
+}
+
+.table-comments .footer a,
+.card-posts .stats a{
+  padding: 0 5px;
+  color: #777777;
+}
+
+.card-posts .stats{
+  padding: 13px;
+}
+
+.card-posts img{
+  max-width: 140px;
+}
+
+.card img{
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+
+.card-theme .footer{
+  padding: 13px 8px 15px 5px;
+  margin-top: 1px;
+  border: 1px solid #dddddd;
+}
+
+.card-theme .footer .btn{
+  margin-left: 4px;
+}
+
+.card-theme{
+  position: relative;
+}
+
+.card-theme .alert{
+  position: absolute;
+  width: 100%;
+  top:8px;
+  border-radius: 0;
+}

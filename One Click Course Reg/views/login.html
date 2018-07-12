@@ -1,0 +1,21 @@
+<div class="col-md-8 offset-md-2" ng-controller="MyAppCtrl">
+    <h2 id="header">One Click Registraion</h2>
+    <form id="login" name="studentLogin">
+      <legend style="text-align:center">Login</legend>
+      <div class="form-group">
+          <label for="enroll">Enrollment <span style="color:red">*</span></label>
+          <input type="text" class="form-control" ui-mask="99-999999-999" name="enroll"
+		  ng-model="enroll" id="enroll"  required />
+          <span class="msg" ng-show="studentLogin.enroll.$touched && studentLogin.enroll.$invalid">The enrollment is required.</span>
+      </div>
+      <div class="form-group">
+          <label for="pass">Password <span style="color:red">*</span></label>
+          <input type="password" class="form-control" name="pass"
+		  ng-model="pass" id="pass" placeholder="Enter Your Password" required />
+          <span class="msg" ng-show="studentLogin.pass.$touched && studentLogin.pass.$invalid">The password is required.</span>
+      </div>
+      <div class="form-group">
+          <input type="submit" ng-click="Login()" class="btn btn-block" value="Login">
+      </div>
+    </form>
+  </div>
